@@ -6,12 +6,13 @@
     min-height: 100vh;
     width: 100%;
     background-image: linear-gradient(
-        rgba(245,153,39,0.6),rgba(255, 255, 255, 0.7) 25%, rgba(255, 255, 255, 0.7) 70%,  rgba(245,153,39,0.6) 10%) ;
+        rgba(245,153,39,0.6),rgba(255, 255, 255, 0.7) 25%);
         background-position: center;
         background-size: cover;
         position: relative;
     
 }
+/* rgba(255, 255, 255, 0.7) 70%,  rgba(245,153,39,0.6) 10%)  */
 nav{
     display: flex;
     padding: 2% 6%;
@@ -53,15 +54,56 @@ nav img{
     width: 90%;
     color: rgb(58, 4, 63);
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: left;
 }
+.input{
+    background-color: #f8fffc;
+    color: rgb(131, 126, 126);
+    margin: 4px;
+    cursor: pointer;
+    padding:5px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px
+}
+.button{
+    background-color: #dd731c; /* Green */
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 5px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+}
 /* trending courses */
 .course{
-    width: 80%;
+    width: 90%;
     margin: auto;
+    top: 30%;
+    left:50%;
+    /* padding-top: 100px; */
     text-align: left;
-    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+
+}
+p{
+    color:rgb(58, 4, 63);
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 22px;
+    padding:10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
 }
