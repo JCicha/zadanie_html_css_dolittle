@@ -86,16 +86,14 @@ nav img{
 }
 /* trending courses */
 .course{
-    background-color: #d69b6b; /* Green */
-    width: 100%;
+    background-color: #d69b6b;
     margin: auto;
-    left: 20%;
-    padding-top: 80px;
-    text-align: left;
+    left: 80%;
+    padding-top: 40px;
+    text-align: center;
 }
 .course-col{
-    width: 30%;
-    height: 30%;
+    border-radius: 100vh;
 }
 h1{
     font-size: 36px;
@@ -105,6 +103,13 @@ h2{
     color: rgb(255, 255, 255);
     font-size: 36px;
     font-weight: 600;
+    text-align: left;
+}
+h4{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
 }
 p{
     color:rgb(58, 4, 63);
@@ -115,13 +120,17 @@ p{
 }
 .row{
     margin-top: 5%;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 100vh;
+    /* justify-content: space-between; */
 }
 .fa:hover {
     opacity: 1;
 }
-
 .fa-instagram {
     background: white;
     color: rgb(0, 0, 0);
@@ -155,16 +164,21 @@ p{
 .first-row  {
 /* width: calc(100vw); */
 margin-top: 100px;
-display: flex;
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap: 5%;
+padding: calc(10vw);
+margin: auto;
+max-width: 100%;
 /* flex-direction: row; */
 align-items: center;
-justify-content: space-around;
+justify-content: center;
 }
 
 .second-row {
 margin-top: 100px;
 display: grid;
-grid-gap: 20%;
+grid-gap: 10%;
 grid-template-columns: 1fr 1fr;
 justify-content: center;
 align-items: center;
@@ -179,13 +193,68 @@ justify-content: space-around; */
 
 
 #barbeque{
+    margin-left: auto;
+    margin-right: auto;
     border: solid 2px gray;
     border-radius: 15px;
-
+    flex-direction: column;
+    flex: 0.4;
+    align-self: auto;
+    display: block;
 }
 
+#breakfast{
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 2px gray;
+    border-radius: 15px;
+    flex-direction: column;
+    flex: 0.4;
+    align-self: auto;
+    display: block;
 
+}
+#snacks{
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 2px gray;
+    border-radius: 15px;
+    flex-direction: column;
+    flex: 0.4;
+    align-self: auto;
+    display: block;
 
+}
+#cookies{
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 2px gray;
+    border-radius: 15px;
+    flex-direction: column;
+    flex: 0.4;
+    align-self: auto;
+    display: block;
+
+}
+.img-on-photo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.greying-out{
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    filter: grayscale(50%);
+}
+.wrapper{
+    border-radius: 100vh;
+    position: relative;
+}
+@keyframes mymove {
+    from {top: 0px;}
+    to {top: 200px;}
+  }
 /* #breakfast  {
 width: calc(30vw);
 flex: 1;
