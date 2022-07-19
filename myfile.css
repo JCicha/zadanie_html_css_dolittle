@@ -3,7 +3,7 @@
     padding:0;
 }
 .header{
-    min-height: 100vh;
+    min-height: 50vh;
     width: 100%;
     background-image: linear-gradient(
         rgba(245,153,39,0.6),rgba(255, 255, 255, 0.7) 25%);
@@ -11,8 +11,11 @@
         background-size: cover;
         position: relative;
     
+    
 }
-/* rgba(255, 255, 255, 0.7) 70%,  rgba(245,153,39,0.6) 10%)  */
+.cooking-ideas{
+    margin-top: 0vh;
+}
 nav{
     display: flex;
     padding: 2% 6%;
@@ -51,49 +54,57 @@ nav img{
     width: 100%;
 }
 .text-box{
-    width: 90%;
-    color: rgb(58, 4, 63);
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: left;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.group  {
+    flex-direction: column;
+    margin-top: 100px;
+    font-size: xx-large;
 }
 .input{
-    background-color: #f8fffc;
-    color: rgb(131, 126, 126);
-    margin: 4px;
-    cursor: pointer;
-    padding:5px; 
-    border:2px solid #ccc; 
-    -webkit-border-radius: 5px;
-    border-radius: 5px
+    flex-direction: column;
+    margin-top: 100px;
+    align-items: center;
+    font-size: medium;
+    padding:13px;
+    border-radius:15px; 
 }
 .button{
-    background-color: #dd731c; /* Green */
+    background-color:#fd942d;
+    color: #fff;
     border: none;
-    color: rgb(255, 255, 255);
-    padding: 5px 8px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 12px;
-    font-size: 16px;
+    border-radius:15px; 
+    padding:13px;
+    height: 50px;
+    min-width: 100px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: medium;
     cursor: pointer;
 }
 /* trending courses */
 .course{
-    width: 90%;
+    background-color: #d69b6b; /* Green */
+    width: 100%;
     margin: auto;
-    top: 30%;
-    left:50%;
-    /* padding-top: 100px; */
+    left: 20%;
+    padding-top: 80px;
     text-align: left;
+}
+.course-col{
+    width: 30%;
+    height: 30%;
 }
 h1{
     font-size: 36px;
     font-weight: 600;
-
+}
+h2{
+    color: rgb(255, 255, 255);
+    font-size: 36px;
+    font-weight: 600;
 }
 p{
     color:rgb(58, 4, 63);
@@ -107,3 +118,108 @@ p{
     display: flex;
     justify-content: space-between;
 }
+.fa:hover {
+    opacity: 1;
+}
+
+.fa-instagram {
+    background: white;
+    color: rgb(0, 0, 0);
+}
+
+.fa-facebook {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.fa-twitter {
+    background: white;
+    color: rgb(0, 0, 0);
+}
+.fa-pinterest {
+    background: white;
+    color: rgb(0, 0, 0);
+}
+.fa {
+    padding: 10px;
+    font-size: 20px;
+    /* width: 20px; */
+    text-decoration: none;
+    margin: 5px;
+}
+
+.scale{
+    width: calc(10vw+10vh);
+}
+
+.first-row  {
+/* width: calc(100vw); */
+margin-top: 100px;
+display: flex;
+/* flex-direction: row; */
+align-items: center;
+justify-content: space-around;
+}
+
+.second-row {
+margin-top: 100px;
+display: grid;
+grid-gap: 20%;
+grid-template-columns: 1fr 1fr;
+justify-content: center;
+align-items: center;
+padding: calc(10vw);
+margin: auto;
+max-width: 100%;
+/* display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around; */
+}
+
+
+#barbeque{
+    border: solid 2px gray;
+    border-radius: 15px;
+
+}
+
+
+
+/* #breakfast  {
+width: calc(30vw);
+flex: 1;
+height: 300px;
+flex-direction: column;
+border: solid 2px gray;
+border-radius: 15px;
+}
+
+
+#snacks  {
+width: 30%;
+flex: 1;
+height: 300px;
+flex-direction: column;
+border: solid 2px gray;
+border-radius: 15px;
+} */
+
+/* #barbeque  {
+flex-direction: column;
+width: 30%;
+height: 300px;
+border: solid 2px gray;
+border-radius: 15px;
+flex-direction: column;
+align-self: flex-end;
+}
+
+#cookies  {
+flex-direction: column;
+width: 30%;
+height: 300px;
+border: solid 2px gray;
+border-radius: 15px;
+flex-direction: column;
+} */

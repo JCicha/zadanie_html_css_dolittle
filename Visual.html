@@ -1,75 +1,133 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="'viewport" content="width=device-width, initial-scale=1.0">
-        <title> Demo </title>
-        <body style="font-family:'Open Sans'">
-        <link rel="stylesheet" href="myfile.css">
-        <script src="https://kit.fontawesome.com/346b5b3db5.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <section class="header">
-            <nav>
-                <a href = "Visual.html"><img src="img/png/logo.png"> </a>
-                <div class="nav-links">
-                    <ul>
-                        <li> <a href=""> Home </a></li>
-                        <li> <a href=""> Recipes </a></li>
-                        <li> <a href=""> About </a></li>
-                        <li> <a href=""> Contact </a></li>
-                    </ul>
-                </div>
-            </nav>
-        </section>
-        <div class="text-box">
-            <h1>Master The</h1>
-            <h1>Culinary Arts Today</h1>
-            <p>Explore 250+ recipies</p>
-            <form>
-                <div class="input-group">
-                    <div class="input">
-                        <input type="text" class="input" placeholder="Enter your e-mail"/>
+<head>
+    <meta charset="utf-8">
+    <meta name="'viewport" content="width=device-width, initial-scale=1.0">
+    <title> Demo </title>
+    <body style="font-family:'Open Sans'">
+    <link rel="stylesheet" href="myfile.css">
+    <script src="https://kit.fontawesome.com/346b5b3db5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="scale">
+        <div class="container">
+            <div class="header">
+                <nav>
+                    <a href = "Visual.html"><img alt="Logo" src="img/svg/logo.svg"> </a>
+                    <div class="nav-links">
+                        <ul>
+                            <li> <a href=""> Home </a></li>
+                            <li> <a href=""> Recipes </a></li>
+                            <li> <a href=""> About </a></li>
+                            <li> <a href=""> Contact </a></li>
+                        </ul>
                     </div>
-                    <div class="button">
-                        <button type="button" class="button">Subscribe</button>
+                </nav>
+            </section>
+            <div class="text-box">
+                <div class="group">
+                    <div class="Title">
+                        <h1>Master The</h1>
+                        <h1>Culinary Arts Today</h1>
+                        <p>Explore 250+ recipies</p>
+                        <div class="submit">
+                            <input type="email" class="input" placeholder="Enter your e-mail" />
+                            <button type="button" class="button">Subscribe</button>
+                        </div>
                     </div>
+                        
                 </div>
-            </form>
-            <div class="row">
-                <div class="course-col">
-                    <h2>tu</h2>
-                </div>
-                <div class="course-col">
-                    <h2>tu</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="course-col">
-                    <h2>tu</h2>
-                </div>
-                <div class="course-col">
-                    <h2>tu</h2>
+                <div class="main-photo">
+                    <img alt="cooking" src="img/svg/cooking.svg"  width=100% height=100%>
                 </div>
             </div>
         </div>
+        <div class="cooking-ideas">
+            <div class="first-row">
+                <div id="breakfast">
+                    <img
+                        src="img/svg/breakfast.svg"
+                        alt="breakfast picture"
+                        style="padding: 20px; margin-left: 50px;"
+                        class="center-img"
 
+                    />
+                    <p style="padding: 20px; margin-left: 50px;">Breakfast ideas</p>
+                </div>
+                <div id="snacks">
+                    <img
+                        src="img/svg/snacks.svg"
+                        alt="breakfast picture"
+                        style="padding: 20px; margin-left: 100px;"
+                    />
+                    <p style="padding: 20px; margin-left: 50px;">snacks</p>
+                </div>
+            </div>
+            <div class="second-row">
+                <div id="barbeque">
+                    <img
+                        src="img/svg/barbecue.svg"
+                        alt="breakfast picture"
+                        style="padding: 20px; margin-left: 100px;"
+                    />
+                    <p style="padding: 20px; margin-left: 50px;">barbecoue</p>
+                </div>
+                <div id="cookies">
+                    <img
+                        src="img/svg/cookies.svg"
+                        alt="breakfast picture"
+                        style="padding: 20px; margin-left: 100px;"
+                    />
+                    <p style="padding: 20px; margin-left: 50px;">cookies</p>
+                </div>
+            </div>
+        </div>
+    
         <section class="course">
-            <h1>  <i class="fa-solid fa-arrow-trend-up"></i> Trending Recipes</h1>
+            <h2>  <i class="fa-solid fa-arrow-trend-up"></i> Trending Recipes</h2>
             <div class="row">
                 <div class="course-col">
-                    <h2>tu</h2>
+                    <a href="Visual.html">
+                        <img 
+                        alt="pancakes" 
+                        src="img/photo/pancakes.jpg"  
+                        width=200 
+                        height=300
+                        border-radius=15px>
+                    </a>
                 </div>
                 <div class="course-col">
-                    <h2>tu</h2>
+                    <a href="Visual.html">
+                        <img 
+                        alt="musli" 
+                        src="img/photo/musli.jpg"  
+                        width=200 
+                        height=300
+                        border-radius=15px>
+                    </a>
                 </div>
                 <div class="course-col">
-                    <h2>tu</h2>
+                    <a href="Visual.html">
+                        <img 
+                        alt="pumpkin_pie" 
+                        src="img/photo/pumpkin_pie.jpg" 
+                        width=200 
+                        height=300
+                        border-radius=15px>
+                    </a>
                 </div>
             </div>
         </section>
-        
-        
-        <footer> &copy; 2022 EasyMeals. All rights reserved </footer>
-    </body>
+        <div id="footer">
+            <p {style="text-align:left"}>&copy; 2022 EasyMeals. All rights reserved
+                <span style="float:right;">
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-pinterest"></a>
+                </span>
+            </p>
+        </div>
+    </div> 
+</body>
 </html>
