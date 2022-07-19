@@ -7,13 +7,38 @@
     <body style="font-family:'Open Sans'">
     <link rel="stylesheet" href="myfile.css">
     <script src="https://kit.fontawesome.com/346b5b3db5.js" crossorigin="anonymous"></script>
+    <!-- <style>
+        .child{
+            background-color: red;
+            height: 50%;
+            width: 50%;
+        }
+        .parent:hover .child{
+            transform: translateX(100%);
+            animation: left-to-right 1s ease-in forwards;
+        }
+        @keyframes left-to-right{
+            0%{
+                transform: translateX(0);
+            }
+            33%{
+                transform: translateY(100%);
+            }
+            66%{
+                transform: translateX(100%) translateY(100%);
+            }
+            100%{
+                transform: translateX(100%);
+            }
+        }
+    </style> -->
 </head>
 <body>
     <div class="scale">
         <div class="container">
             <div class="header">
                 <nav>
-                    <a href = "Visual.html"><img alt="Logo" src="img/svg/logo.svg"> </a>
+                    <a href = "Visual.html"><img alt="Logo of the page" src="img/svg/logo.svg"> </a>
                     <div class="nav-links">
                         <ul>
                             <li> <a href=""> Home </a></li>
@@ -38,29 +63,29 @@
                         
                 </div>
                 <div class="main-photo">
-                    <img alt="cooking" src="img/svg/cooking.svg"  width=100% height=100%>
+                    <img alt="Cooker sitting on a hat" src="img/svg/cooking.svg"  width=100% height=100%>
                 </div>
             </div>
         </div>
         <div class="cooking-ideas">
             <div class="first-row">
                 <div id="breakfast">
-                    <a href="https://www.loveandlemons.com/healthy-breakfast-ideas/">
-                        <img
-                        src="img/svg/breakfast.svg"
-                        alt="breakfast picture"
-                        style="padding: 10px; margin-left: 50px;"
-                    />
-                    <p style="padding: 20px; margin-left: 50px; text-align: center;">Breakfast ideas</p>
-                    </a>
+                    <div class="child bounce">
+                        <a href="https://www.loveandlemons.com/healthy-breakfast-ideas/">
+                            <img
+                            src="img/svg/breakfast.svg"
+                            alt="Picture of english breakfast: eggs, sausage and fries with beer and glass of coke."
+                            style="padding: 10px; margin-left: 50px;"/>
+                        <p style="padding: 20px; margin-left: 50px; text-align: center;">Breakfast ideas</p>
+                        </a>
+                    </div>
                 </div>
                 <div id="snacks">
                     <a href="https://www.delish.com/cooking/nutrition/g600/healthy-snacks-for-work/">
                         <img
                         src="img/svg/snacks.svg"
-                        alt="breakfast picture"
-                        style="padding: 10px; margin-left: 100px;"
-                    />
+                        alt="Picture of a woman holding a snack."
+                        style="padding: 10px; margin-left: 100px;"/>
                     <p style="padding: 20px; margin-left: 50px; text-align: center;">Snacks</p>
                     </a>
                 </div>
@@ -70,9 +95,8 @@
                     <a href="https://sklep.kuchnieswiata.com.pl/pol_m_KATALOG-PRODUKTOW_Sosy_Barbecue-1080.html">
                         <img
                         src="img/svg/barbecue.svg"
-                        alt="breakfast picture"
-                        style="padding: 10px; margin-left: 50px;"
-                    />
+                        alt="Picture of a man grilling hamburgers."
+                        style="padding: 10px; margin-left: 50px;"/>
                     <p style="padding: 20px; margin-left: 50px; text-align: center;">Barbecoue</p>
                     </a>
                     
@@ -81,9 +105,8 @@
                     <a href="https://www.bettycrocker.com/recipes/ultimate-chocolate-chip-cookies/77c14e03-d8b0-4844-846d-f19304f61c57">
                         <img
                         src="img/svg/cookies.svg"
-                        alt="breakfast picture"
-                        style="padding: 10px; margin-left: 50px;"
-                    />
+                        alt="Picture of a birds eating and destroying candy trees."
+                        style="padding: 10px; margin-left: 50px;"/>
                     <p style="padding: 20px; margin-left: 50px; text-align: center;">Cookies</p>
                     </a>
                 </div>
@@ -96,7 +119,7 @@
                 <div class="course-col">
                     <a href="https://www.kwestiasmaku.com/dania_dla_dwojga/pancakes/pancakes.html">
                         <img 
-                        alt="pancakes" 
+                        alt="Picture of a pancakes with honey and orange." 
                         src="img/photo/pancakes.jpg"
                         width=250 
                         height=300>
@@ -105,7 +128,7 @@
                 <div class="course-col">
                     <a href="https://mojemusli.pl/">
                         <img 
-                        alt="musli" 
+                        alt="Picture of a bowls of musli and fruit." 
                         src="img/photo/musli.jpg"  
                         width=250 
                         height=300>
@@ -116,7 +139,7 @@
                         <a href="https://mojewypieki.com/przepis/pumpkin-pie">
                             <img 
                             id="myImage"
-                            alt="pumpkin_pie" 
+                            alt=" Picture of a pumpkin pie" 
                             src="img/photo/pumpkin_pie.jpg" 
                             width=250 
                             height=300

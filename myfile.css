@@ -39,7 +39,7 @@ nav img{
 .nav-links ul li a{
     color: #fff;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 17px;
 }
 .nav-links ul li::after{
     content: '';
@@ -251,44 +251,24 @@ justify-content: space-around; */
     border-radius: 100vh;
     position: relative;
 }
-@keyframes mymove {
-    from {top: 0px;}
-    to {top: 200px;}
-  }
-/* #breakfast  {
-width: calc(30vw);
-flex: 1;
-height: 300px;
-flex-direction: column;
-border: solid 2px gray;
-border-radius: 15px;
+.container-to-bounce {
+    border-bottom: 2px solid #000000;
+    display: flex;
+    height: 200px;
+    width: 100%;
 }
-
-
-#snacks  {
-width: 30%;
-flex: 1;
-height: 300px;
-flex-direction: column;
-border: solid 2px gray;
-border-radius: 15px;
-} */
-
-/* #barbeque  {
-flex-direction: column;
-width: 30%;
-height: 300px;
-border: solid 2px gray;
-border-radius: 15px;
-flex-direction: column;
-align-self: flex-end;
+.child {
+    align-self: flex-end;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
 }
-
-#cookies  {
-flex-direction: column;
-width: 30%;
-height: 300px;
-border: solid 2px gray;
-border-radius: 15px;
-flex-direction: column;
-} */
+.bounce:hover {
+    animation-name: bounce;
+    animation-timing-function: ease;
+}
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-100px); }
+  100% { transform: translateY(0); }
+}
